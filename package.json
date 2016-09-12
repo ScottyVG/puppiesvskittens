@@ -16,5 +16,19 @@
     "swig": "^1.4.2",
     "twitter": "^1.2.5",
     "winston": "^0.9.0"
-  }
+  },
+  "description": "1. clone repo 1. run ```npm i``` 1. rename _config_example.js to _config.js 1. add api keys",
+  "main": "_config.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScottyVG/puppiesvskittens.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScottyVG/puppiesvskittens/issues"
+  },
+  "homepage": "https://github.com/ScottyVG/puppiesvskittens#readme"
 }
