@@ -1,3 +1,5 @@
+'use strict'
+
 var debug = require('debug')('sockettest:server');
 var http = require('http');
 var port = '3000';
