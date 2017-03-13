@@ -1,15 +1,14 @@
-'use strict'
-
 var debug = require('debug')('sockettest:server');
 var http = require('http');
 var port = '3000';
 var app = require('./app');
 var Twitter = require('twitter');
 var config = require('./_config');
+var env = require('dotenv').config();
+// var port = process.env.PORT || 8000;
 
-
-var server = app.listen(3000, function() {
-  console.log('The server is listening on port 3000');
+var server = app.listen(port, () => {
+  console.log('The server is listening on port', port);
 });
 
 var io = require('socket.io').listen(server);

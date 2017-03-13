@@ -1,11 +1,11 @@
 // main dependencies
 var express = require('express'),
-    path = require('path'),
-    logger = require('morgan'),
-    cookieParser = require('cookie-parser'),
-    bodyParser = require('body-parser'),
-    http = require('http'),
-    swig = require('swig');
+  path = require('path'),
+  logger = require('morgan'),
+  cookieParser = require('cookie-parser'),
+  bodyParser = require('body-parser'),
+  http = require('http'),
+  swig = require('swig');
 
 // routes
 var routes = require('./routes/index');
@@ -21,7 +21,9 @@ app.set('view engine', 'html');
 // middleware
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
